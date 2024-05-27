@@ -357,7 +357,7 @@ file_type_get(const char *path) {
       return FILE_IGNORE;
     }
 
-  if ((filename[0] == '_') || (filename[0] == '.'))
+  if (filename[0] == '.')
     return FILE_IGNORE;
 
   return FILE_REGULAR;
